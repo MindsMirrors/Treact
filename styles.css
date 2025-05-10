@@ -781,7 +781,7 @@ header .row {
 }
 
 /*
-    Start
+    START
 */
 
 .start__container {
@@ -853,4 +853,121 @@ header .row {
 .start__button:nth-child(2):hover {
     background-color: rgba(247, 250, 252);
     color: rgba(100, 21, 255);
+}
+
+/* 
+    FOOTER
+*/
+
+footer {
+    padding: 96px 32px;
+    background-color: rgb(100, 21, 255);
+    margin-bottom: -32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+}
+
+.link__title {
+    font-weight: 700;
+    color: #f7fafc;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.link__item {
+    color: #f7fafc;
+    font-size: 14px;
+    margin-top: 12px;
+    line-height: 1.5;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+.link__item:nth-child(2) {
+    margin-top: 24px;
+}
+
+.link__item:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    transition: all 300ms;
+    opacity: 0;
+}
+
+.link__item:hover:after {
+    opacity: 1;
+}
+
+.footer__divider {
+    width: 100%;
+    height: 2px;
+    margin: 64px 0;
+    background: rgb(116, 44, 255);
+}
+
+.footer__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 48px 0;
+}
+
+.footer__info--logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer__info--img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer__info--name {
+    font-size: 20px;
+    color: #f7fafc;
+    font-weight: 900;
+    margin-left: 8px;
+    letter-spacing: 0.05em;
+}
+
+.footer__info--copy {
+    color: #f7fafc;
+    font-weight: 300;
+}
+
+.footer__info--socials {
+    display: flex;
+}
+
+.footer__social--link {
+    margin-left: 16px;
+    padding: 8px;
+    background: #f7fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.footer__social--link:hover {
+    background-color: rgba(203, 213, 224);
 }
